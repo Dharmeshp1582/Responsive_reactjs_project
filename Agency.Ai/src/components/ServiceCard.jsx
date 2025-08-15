@@ -15,7 +15,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div
-      className="relative overflow-hidden w-full max-w-lg m-2 sm:m-4 rounded-xl border border-gray-200 dark:border-gray-700 shadow-2xl shadow-gray-100 dark:shadow-white/10" onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)} ref={divRef} onMouseMove={handleMouseMove}
+      className="relative overflow-hidden cursor-pointer max-w-lg m-2 sm:m-4 rounded-xl border border-gray-200 dark:border-gray-700 shadow-2xl shadow-gray-100 dark:shadow-white/10" onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)} ref={divRef} onMouseMove={handleMouseMove}
      
     >
       {/* Gradient background */}
@@ -28,7 +28,7 @@ const ServiceCard = ({ service }) => {
       />
 
       {/* Card content */}
-      <div className="flex items-center gap-10 p-8 hover:p-7 transition-all rounded-[10px] bg-white dark:bg-gray-900 z-10 relative">
+      <div className="flex items-center gap-10 p-8 hover:p-7.5  transition-all rounded-[10px] bg-white dark:bg-gray-900 z-10 relative ">
         <div className="bg-gray-100 dark:bg-gray-700 rounded-full">
           <img
             src={service.icon}
